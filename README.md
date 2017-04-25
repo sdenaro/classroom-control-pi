@@ -1,3 +1,5 @@
+Steve Hawkins test
+
 # `classroom-control-pi`
 
 This is the classroom control repository for the Puppetizing Infrastructure class.
