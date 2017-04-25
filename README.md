@@ -1,5 +1,7 @@
 # `classroom-control-pi`
 
+**THIS BRANCH BELONGS TO C. RODDY, DO NOT TOUCH, PLEASE, OKAY, THANKS**
+
 This is the classroom control repository for the Puppetizing Infrastructure class.
 
 ## Usage
