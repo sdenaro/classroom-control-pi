@@ -30,4 +30,5 @@ node default {
   include examples::puppetize
   
   notify { "This is the default message from the production environment": }
+  notify { "This is a test for manifest excercise": }
 }
