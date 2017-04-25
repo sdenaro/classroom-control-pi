@@ -2,6 +2,8 @@
 
 This is the classroom control repository for the Puppetizing Infrastructure class.
 
+I CAN HAZ README.
+
 ## Usage
 
 Small site modules should be developed in the `site` directory. This is appended
