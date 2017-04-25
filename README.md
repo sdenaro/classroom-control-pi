@@ -1,5 +1,6 @@
 # `classroom-control-pi`
 
+ARAKOSKI
 This is the classroom control repository for the Puppetizing Infrastructure class.
 
 ## Usage
