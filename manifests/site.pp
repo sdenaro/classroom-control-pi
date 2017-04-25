@@ -31,4 +31,5 @@ node default {
   
   notify { "This is the default message from the production environment": }
   notify { "This is a test for manifest excercise": }
+  notify { "This will only be enforced on the Linux container.": }
 }
