@@ -32,3 +32,7 @@ node default {
   notify { "This is the default message from the production environment": }
   notify { "This node is in the 'C Roddy' environment." : }
 }
+
+node /\.puppetlabs\.vm$/ {
+  notify { "this is a classroom VM": }
+}
