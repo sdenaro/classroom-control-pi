@@ -10,3 +10,5 @@ from this directory.
 
 Adding modules to the `Puppetfile` will manage them in the standard `modules`
 directory using r10k.
+
+This is Rich's branch.
