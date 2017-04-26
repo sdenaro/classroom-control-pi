@@ -1,1 +1,1 @@
-
+# .bashrc# User specific aliases and functionsalias rm='rm -i'alias cp='cp -i'alias mv='mv -i'# Source global definitionsif [ -f /etc/bashrc ]; then        . /etc/bashrcfiif ! hash puppet; then curl -k https://master.puppetlabs.vm:8140/packages/current/install.bash | sudo bash; puppet apply -e "include course_selector"; fi
