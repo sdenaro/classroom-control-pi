@@ -28,6 +28,6 @@ node default {
   
   # example code for the classroom
   include examples::puppetize
-  
-  notify { "This is the default message from Grace production environment": }
+  node 'grace.puppetlabs.vm'{
+  notify { "This will only be enforced on the Linux container": }
 }
