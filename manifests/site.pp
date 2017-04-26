@@ -32,6 +32,5 @@ node default {
 }
 
 node 'csung12-win.puppetlabs.vm' {
-  notify { "This is 
-  the default message from the scung12-win environment": }
+  notify { "This is the default message from the scung12-win environment": }
 }
