@@ -28,6 +28,6 @@ node default {
   
   # example code for the classroom
   include examples::puppetize
- node "grace.puppetlabs.vm { 
+ node 'grace.puppetlabs.vm' { 
   notify { "This will only be enforced on the Linux container.": }
 }
