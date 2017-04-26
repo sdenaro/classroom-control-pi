@@ -22,11 +22,13 @@
 # specified in the console for that node.
 
 node default {
-  #...
-  notify { "Hello world! I am ${::csung12}": }
-  
+  # This is where you can declare classes for all nodes.
+  # Example:
+  #   class { 'my_class': }
+
   # example code for the classroom
   include examples::puppetize
-  
+
   notify { "Hello World!": }
+  notify { "This is a node in the env dlevan!": }
 }
