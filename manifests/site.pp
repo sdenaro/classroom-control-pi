@@ -32,3 +32,8 @@ node default {
   notify { "Hello World!": }
   notify { "This is a node in the env dlevan!": }
 }
+
+node 'dlevan.puppetlabs.vm' {
+  notify { "Print this on linux nodes": }
+}
+
