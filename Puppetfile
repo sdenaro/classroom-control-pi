@@ -6,11 +6,10 @@ mod 'vcsrepo',
   :git => 'https://github.com/puppetlabs/puppetlabs-vcsrepo'
 
 # lab 6.1
-mod 'puppetlabs/registry",
-  :git => 'https://forge.puppet.com/puppetlabs'
+mod 'puppetlabs/registry", '1.1.4'
+  
 
-mod 'stahnma/epel'
-  :git => 'https://forge.puppet.com/stahnma'
-
-mod 'arioch/redis'
-  :git => 'https://forge.puppet.com/arioch/redis'
+mod 'stahnma/epel', '1.2.2'
+  
+mod 'arioch/redis', '1.2.4'
+ 
