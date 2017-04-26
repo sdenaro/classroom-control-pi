@@ -6,7 +6,7 @@ class skeleton {
     mode   => '0755', 
  } 
 # add a resource to manage /etc/skel/.bashrc 
-   file {'/etc/skel':
+   file {'/etc/skeleton':
    ensure => 'file',       
    owner  => 'root',       
    group  => 'root',       
