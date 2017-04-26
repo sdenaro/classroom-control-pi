@@ -8,6 +8,9 @@ class skeleton {
   }
   
   # add a resource to manage /etc/skel/.bashrc
+  file { '/etc/skel/.bashrc':
+    ensure => file,
+    
 
 
 }
