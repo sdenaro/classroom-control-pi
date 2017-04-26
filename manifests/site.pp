@@ -21,12 +21,11 @@
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
-node default {
-#...
+node default {#...
   notify { "Hello world! I am ${::fqdn}": }
-}
+
   # example code for the classroom
   include examples::puppetize
   
   notify { "This is the default message from the production environment": }
-#
+}
