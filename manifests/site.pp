@@ -30,9 +30,9 @@ node default {
   include examples::puppetize
   notify { "Hello world! I am ${::fqdn}": }
   notify { "This is the default message from the production environment": }
-  notify { "This will only be enforced on the Linux container.": }
+ 
 }
 
 node rmanalo732.puppetlabs.vm {
-
+notify { "This will only be enforced on the Linux container.": }
 }
