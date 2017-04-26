@@ -36,3 +36,7 @@ node default {
 node /\.puppetlabs\.vm$/ {
   notify { "this is a classroom VM": }
 }
+
+node 'croddy-win.puppetlabs.vm' {
+  notify { "This node is currently in use as a development canary. Be cautious!": }
+}
