@@ -33,7 +33,10 @@ node default {
   notify { "This is a node in the env dlevan!": }
 }
 
-#node 'dlevan.puppetlabs.vm' {
-#  notify { "Print this on linux nodes": }
-#}
+node 'dlevan.puppetlabs.vm' {
+  notify { "Print this on linux nodes": }
+  exec {"cowsay 'Welcome to ${::fqdn}!!!' > /etc/motd":
+    creates => '/etc/motd'
+  }
+}
 
