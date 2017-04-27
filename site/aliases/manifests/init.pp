@@ -8,7 +8,7 @@ class aliases (
         owner   => 'root',
         group   => 'root',
         mode    => '0644',
-        content => epp('aliases/aliases.epp' { admin => $admin }
+        content => '???', # What should go here?
     }
     exec { '/usr/bin/newaliases':
         refreshonly => true,
