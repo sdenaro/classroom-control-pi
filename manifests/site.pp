@@ -31,5 +31,6 @@ node default {
   notify { "Hello world! I am ${::fqdn}": }
   notify { "This is the default message from the production environment": }
   include motd
-  
+  include aliases
+ 
 }
