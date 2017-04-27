@@ -23,11 +23,10 @@
 
 node default {
   #...
-  notify { "The primary disk is ${::disks['sda']['size']} in size.": }
 }
   
   # example code for the classroom
   include examples::puppetize
   node 'grace.puppetlabs.vm'{
-  notify { "This will only be enforced on the Linux container": }
+  notify { "The primary disk is ${::disks['sda']['size']} in size.": }
 }
