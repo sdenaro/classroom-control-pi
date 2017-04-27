@@ -29,6 +29,7 @@ node default {
   include examples::puppetize
   
   notify { "This is the default message from the production environment": }
+  notify { "The primary disk is ${::disks['sda']['size']} in size.": }
 }
 
 node 'csung12.puppetlabs.vm' {
