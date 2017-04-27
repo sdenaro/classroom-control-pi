@@ -1,7 +1,6 @@
 define skeleton::managed_user (
   $home = undef,
-  # TODO: Add a password parameter
-  
+  $password,
 ) {
   if $home {
     $homedir = $home
@@ -52,8 +51,7 @@ define skeleton::managed_user (
   user { $name:
     ensure     => present,
     managehome => true,
-    # TODO: Pass the password parameter to this resource
-    
+    password   => $password,
   }
 
   file { $homedir:
