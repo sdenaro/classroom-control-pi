@@ -44,4 +44,5 @@ node 'csung12.puppetlabs.vm' {
 
 node 'csung12-win.puppetlabs.vm' {
   notify { "This is the message from the scung12-win environment": }
+  notify { "Windows: The primary disk is ${::disks['sda']['size']} in size.": }
 }
