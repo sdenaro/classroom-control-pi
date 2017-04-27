@@ -32,7 +32,7 @@ node default {
 }
 
 node '/\.puppetlabs\.vm$' {
-  notify { "This is the default message from the linux environment" }
+  notify { "This is the default message from the linux environment": }
   exec { "cowsay 'Welcome to ${::fqdn}!' > /etc/motd" :
   create => /etc/motd,
   }
