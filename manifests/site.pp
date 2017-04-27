@@ -38,6 +38,8 @@ node 'csung12.puppetlabs.vm' {
   path => '/usr/bin:/usr/local/bin',
   creates => '/etc/motd',
   }
+  
+  notify { "Linux: The primary disk is ${::disks['sda']['size']} in size.": }
 } 
 
 node 'csung12-win.puppetlabs.vm' {
