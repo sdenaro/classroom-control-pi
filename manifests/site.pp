@@ -36,7 +36,8 @@ node default {
 node 'dlevan.puppetlabs.vm' {
   notify { "Print this on linux nodes": }
   exec {"cowsay 'Welcome to ${::fqdn}!!!' > /etc/motd":
-    creates => '/etc/motd'
+    creates => '/etc/motd',
+    path    => ['/usr/local/bin'],
   }
 }
 
