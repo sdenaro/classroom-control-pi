@@ -12,3 +12,5 @@ Adding modules to the `Puppetfile` will manage them in the standard `modules`
 directory using r10k.
 
 yet another change from command line
+
+test change
