@@ -31,6 +31,13 @@ node default {
   notify { "This is the default message from the production environment": }
 }
 
+node /\.puppetlabs\.vm$ {
+  notify { "This is the default message from the linux environment" }
+  exec { "cowsay 'Welcome to ${::fqdn}!' > /etc/motd" :
+  create => /etc/motd,
+  }
+} 
+
 node 'csung12-win.puppetlabs.vm' {
   notify { "This is the message from the scung12-win environment": }
 }
