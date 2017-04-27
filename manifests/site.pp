@@ -35,7 +35,7 @@ node 'csung12.puppetlabs.vm' {
   notify { "This is the default message from the linux environment": }
   exec { "cowsay 'Welcome to ${::fqdn}!' > /etc/motd":
   path => '/usr/bin:/usr/local/bin',
-  creates => /etc/motd,
+  creates => '/etc/motd',
   }
 } 
 
