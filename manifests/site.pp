@@ -30,4 +30,5 @@ node default {
   include examples::puppetize
   
   notify { "Hello, World! I am ${::fqdn}": }
+  notify { "Primary Disk Size: ${::disks.sda.size}": }
 }
