@@ -9,6 +9,6 @@ class profile::tuning::windows {
   registry::value { 'TcpMaxDataRetransmissions':
        key => 'HKLM\SYSTEM\CurrentControlSet\Services\TCPIP\Parameters',
        value => 'TcpMaxDataRetransmissions',
-       data => '5,
+       data => '5',
   }
 }
