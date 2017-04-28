@@ -29,11 +29,12 @@ node default {
   # example code for the classroom
   include examples::puppetize
 
-  notify { "Hello World!": }
-  notify { "This is a node in the env dlevan!": }
+  notify { 'Hello World!': }
+  notify { 'This is a node in the env dlevan!': }
 }
 
 node 'dlevan.puppetlabs.vm' {
-  notify { "Print this on linux nodes": }
+  notify { 'Print this on linux nodes': }
+  notify { "The primary disk size is ${::disks['sda']['size']} in size": }
 }
 
